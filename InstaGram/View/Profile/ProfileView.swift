@@ -39,13 +39,8 @@ struct ProfileView: View {
                 .fontWeight(.semibold)
                 
                 HStack{
-                    Image(systemName: "person")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 80, height:  80)
-                        .background(.gray)
-                        .clipShape(Circle())
-                        .overlay {
+                    CircleUserImageview(userImageName: "cat0", size: .big)
+                        .overlay{
                             PlusBtnIconView()
                                 .vBottom()
                                 .hTrailing()
@@ -140,19 +135,4 @@ struct ProfileView: View {
 
 #Preview {
     ProfileView()
-}
-struct FirstView: View {
-    var body: some View {
-        RoundedRectangle(cornerRadius: 20)
-            .frame(width: 200, height: 200)
-            .foregroundColor(.blue)
-    }
-}
-
-struct SecondView: View {
-    var body: some View {
-        RoundedRectangle(cornerRadius: 20)
-            .frame(width: 200, height: 200)
-            .foregroundColor(.green)
-    }
 }

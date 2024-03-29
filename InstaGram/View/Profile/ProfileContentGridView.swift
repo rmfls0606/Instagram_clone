@@ -19,7 +19,7 @@ struct ProfileContentGridView: View {
     var body: some View {
         LazyVGrid(columns: columns, spacing: 1, content: {
             ForEach(0..<20){ idx in
-                Image(systemName: "person")
+                Image("cat1")
                     .resizable()
                     .scaledToFill()
                     .frame(width: imageDimesion, height: imageDimesion)

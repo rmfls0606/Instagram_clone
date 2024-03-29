@@ -20,7 +20,7 @@ struct PlusBtnIconView: View {
             .clipShape(Circle())
             .overlay {
                 Circle()
-                    .stroke(lineWidth: 4)
+                    .stroke(lineWidth: 4)   
                     .foregroundColor(colorScheme == .dark ? .black : .white)
             }
     }
